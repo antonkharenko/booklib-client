@@ -1,0 +1,46 @@
+.usermenu {
+  cursor: pointer;
+  position: relative;
+  float: right;
+  height: 48px;
+}
+
+.usermenu-avatar {
+  width: 32px;
+  height: 32px;
+  background-size: 32px 32px;
+  border-radius: 50%;
+  float: left;
+  display: block;
+  margin-top: 8px;
+}
+
+.usermenu-default-avatar {
+  background-image: url('/images/default_avatar.png')
+}
+
+.usermenu-name {
+  max-width: 180px;
+  padding-left: 10px;
+  padding-top: 14px;
+  float: left;
+}
+
+.usermenu > a:hover > .usermenu-name {
+  text-decoration: underline;
+}
+
+.usermenu-chevron {
+  color: #b8b8b8;
+  padding-top: 17px;
+  padding-left: 7px;
+  float: left;
+}
+
+.usermenu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  left:auto;
+  top: 42px;
+}

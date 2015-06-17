@@ -1,0 +1,54 @@
+/* Primary Button */
+
+.btn-primary {
+  background-color: #2dbe60;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+   background-color: #30a859;
+   border-color: rgba(0, 0, 0, 0.1);
+ }
+
+.btn-primary:focus {
+  background-color: #2dbe60;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:active {
+  background-color: #2a944e;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Default Button */
+
+.btn-default {
+  background-color: #ebebeb;
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #333;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-size: 14px;
+}
+
+.btn-default:hover {
+  background-color: #dddddd;
+  color: #333;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-default:focus {
+  background-color: #ebebeb;
+  color: #333;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-default:active {
+  background-color: #d1d1d1;
+  color: #333;
+  border-color: rgba(0, 0, 0, 0.1);
+}

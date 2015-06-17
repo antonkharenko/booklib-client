@@ -1,0 +1,26 @@
+<nav class="header shadow" ng-controller="UsermenuCtrl">
+  <div class="header-left-content">
+    <!-- Logo -->
+    <div class="header-logo">
+      <a href="#/dashboard/{{user.username}}">Booklib</a>
+      <i class="fa fa-book fa-2x header-logo-icon"></i><span class="header-logo-text">Booklib</span>
+    </div>
+  </div>
+
+  <div class="header-right-content">
+    <!-- Usermenu -->
+    <div class="usermenu no-select" dropdown>
+      <!-- User Info -->
+      <a class="no-decoration" dropdown-toggle>
+        <span class="usermenu-avatar usermenu-default-avatar"></span>
+        <span class="usermenu-name overflow-ellipsis">{{user.first_name}}&nbsp;{{user.last_name}}</span>
+        <i class="usermenu-chevron fa fa-caret-down"></i>
+      </a>
+
+      <!-- User Dropdown Menu  -->
+      <ul class="usermenu-dropdown dropdown-menu arrow-top-right shadow" role="menu">
+        <li><a ng-click="logout();"><i class="fa fa-sign-out"></i>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

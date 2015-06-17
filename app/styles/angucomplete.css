@@ -1,0 +1,58 @@
+.angucomplete-holder {
+    position: relative;
+}
+
+.angucomplete-dropdown {
+    border-color: #ececec;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    width: 540px;
+    padding: 6px;
+    cursor: pointer;
+    z-index: 9999;
+    position: absolute;
+    margin-top: -6px;
+    background-color: #ffffff;
+}
+
+.angucomplete-searching {
+    color: #acacac;
+    font-size: 14px;
+}
+
+.angucomplete-description {
+    font-size: 12px;
+}
+
+.angucomplete-row {
+    padding: 1px;
+    color: #000000;
+    margin-bottom: 4px;
+    height: 52px;
+}
+
+.angucomplete-selected-row, .angucomplete-row:hover {
+    background-color: lightblue;
+    color: #ffffff;
+}
+
+.angucomplete-image-holder {
+    padding-top: 2px;
+    float: left;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.angucomplete-image {
+    height: 48px;
+    width: 32px;
+}
+
+.angucomplete-image-default {
+    background-image: url('/images/default_book_cover.png');
+    background-position: center;
+    background-size: contain;
+    height: 48px;
+    width: 32px;
+}

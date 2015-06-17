@@ -1,0 +1,50 @@
+<div class="container auth-container">
+  <div class="auth-logo">
+    <h1>Booklib</h1>
+  </div>
+
+  <div class="row auth-dialog shadow">
+    <h2>Sign up</h2>
+
+    <div ng-show="error" class="alert alert-danger">{{error}}</div>
+    <form role="form" ng-submit="signUp()">
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="username" ng-model="signUpRequest.username" placeholder="Username"
+               pattern="^[a-zA-Z0-9\-_\.]{3,50}$"
+               title="Should be from 3 to 50 chars long and use following characters: letters('a'-'z','A'-'Z'), digits('0'-'9'), dash('-'), underscore('_') or dot('.')" />
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="firstName" ng-model="signUpRequest.first_name" placeholder="First name"
+               maxlength="100" required>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="lastName" ng-model="signUpRequest.last_name" placeholder="Last name"
+               maxlength="100" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" ng-model="signUpRequest.email" placeholder="Email"
+               maxlength="100" required>
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" id="password" ng-model="signUpRequest.password" placeholder="Password"
+               minlength="4" maxlength="100" required>
+      </div>
+
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Sign up">
+      </div>
+
+      <p>
+        Already have an account? <a href="#" style="text-decoration: underline;">Log in</a>
+      </p>
+
+    </form>
+  </div>
+
+</div>
+

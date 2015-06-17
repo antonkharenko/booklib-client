@@ -1,0 +1,31 @@
+<div ng-controller="DashboardCtrl">
+
+  <!-- Header -->
+  <div ng-include="'views/header.html'"></div>
+
+  <div class="dashboard-container">
+
+    <div class="dashboard shadow">
+
+      <!-- TODO: Form for adding book from the search to user's library -->
+
+      <!-- Book Search Field -->
+      <div class="form-group">
+        <angucomplete id="search_books"
+                      placeholder="Search books"
+                      pause="500"
+                      selectedobject="searchBook"
+                      datafield="books"
+                      titlefield="title"
+                      descriptionfield="subtitle"
+                      imagefield="cover_images.smallThumbnail"
+                      minlength="3"
+                      inputclass="form-control form-control-small"/>
+      </div>
+
+      <!-- TODO: Show user's library (books) -->
+
+    </div>
+  </div>
+
+</div>

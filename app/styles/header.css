@@ -1,0 +1,51 @@
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background: white;
+  height: 48px;
+}
+
+.header-left-content {
+  margin-left: 15px;
+  float: left;
+  width: 180px;
+}
+
+.header-right-content {
+  margin-right: 15px;
+  float: right;
+  width: auto;
+}
+
+.header-logo {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.header-logo > a {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1000
+}
+
+.header-logo-icon {
+  padding-top: 10px;
+}
+
+.header-logo-text {
+  padding-left: 7px;
+  font-family: Lato, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}

@@ -1,0 +1,55 @@
+
+/*
+ * Overrides and adds styles to bootstrap's dropdown-menu classes
+ */
+
+.dropdown-menu {
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 160px;
+}
+
+.dropdown-menu > li > a {
+  cursor: pointer;
+  padding: 8px 40px 8px 16px;
+  color: #666;
+}
+
+.dropdown-menu > li > a > i {
+  width: 16px;
+  text-align: center;
+  margin-right: 12px;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/*
+ * Top-right arrow
+ */
+
+.arrow-top-right:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  right: 14px;
+  bottom: auto;
+  border: 10px solid transparent;
+  border-top: 0;
+  border-bottom-color: rgba(0,0,0,0.22);
+}
+
+.arrow-top-right:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -9px;
+  right: 15px;
+  bottom: auto;
+  border: 9px solid transparent;
+  border-top: 0;
+  border-bottom-color: #fff;
+}
